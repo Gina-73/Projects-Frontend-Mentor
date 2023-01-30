@@ -1,0 +1,152 @@
+
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+
+/*
+font-family: 'Fraunces', serif;
+*/
+
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume{
+    letter-spacing: 6px;
+    margin-top: 25px;
+}
+
+.text{
+    margin: 0;
+    line-height: 22px;
+}
+
+
+.number1{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+}
+
+.number2{
+    display: inline-block;
+    margin-left: 10px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-text, #imagen{
+    height: 450px;
+    width: 270px;
+}
+
+#main-text{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+.firstImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+main, header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+#numbers{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buyIcon{
+    width: 15px;
+    padding-right: 15px;
+}
+
+@media all and (max-width: 375px){
+    #parent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #imagen{
+        height: 200px;
+        width: 85%;
+    }
+
+    .firstImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #main-text{
+        width: 85%;
+        border-radius: 0 0 10px 10px;
+        height: max-content;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    button{
+        margin-bottom: 30px;
+    }
+    
+
+}
+    
+
+
+
